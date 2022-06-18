@@ -1,5 +1,6 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { TiBackspaceOutline } from "react-icons/ti";
+import { GrLinkPrevious } from "react-icons/gr";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import "./styles/ProgressBar.css";
 
@@ -9,7 +10,7 @@ export default function ProgressBar() {
       <div className="backButton">
         <span>
           {" "}
-          <TiBackspaceOutline />{" "}
+          <GrLinkPrevious />{" "}
         </span>
       </div>
       <div className="rangeArea">
@@ -18,14 +19,14 @@ export default function ProgressBar() {
           <div className="progress" style={{ width: "20%" }}></div>
         </div>
       </div>
-      <a href="result.html">
+      <Link to="/Result">
         <Button className="next">
           <span>Next Question</span>
           <span>
             <AiOutlineArrowRight />
           </span>
         </Button>
-      </a>
+      </Link>
     </div>
   );
 }
