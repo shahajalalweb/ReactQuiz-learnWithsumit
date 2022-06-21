@@ -11,3 +11,10 @@
 .account > span:last-child {
   cursor: pointer;
 }
+.account-fontSizing {
+  font-size: large;
+}
+
+.link-size {
+  font-size: 15px;
+}

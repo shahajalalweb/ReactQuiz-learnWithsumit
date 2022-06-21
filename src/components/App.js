@@ -6,6 +6,9 @@ import Login from "./pages/Login";
 import Quiz from "./pages/Quiz";
 import Result from "./pages/Result";
 import Signup from "./pages/Signup";
+import PrivateRoute from "./PrivateRoute";
+import PublicRoute from "./PublicRoute";
+
 import "./styles/App.css";
 
 function App() {
@@ -15,10 +18,10 @@ function App() {
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/Signup" component={Signup} />
-            <Route exact path="/Login" component={Login} />
-            <Route exact path="/Quiz" component={Quiz} />
-            <Route exact path="/Result" component={Result} />
+            <PublicRoute exact path="/Signup" component={Signup} />
+            <PublicRoute exact path="/Login" component={Login} />
+            <PrivateRoute exact path="/Quiz" component={Quiz} />
+            <PrivateRoute exact path="/Result" component={Result} />
           </Switch>
         </Layout>
       </AuthProvider>
