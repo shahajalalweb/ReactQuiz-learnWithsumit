@@ -1,7 +1,7 @@
 import Logo from "./images/3.jpg";
 import "./styles/Video.css";
 
-export default function video() {
+export default function Video() {
   return (
     <div className="video">
       <img src={Logo} alt="playlist" />
